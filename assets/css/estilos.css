@@ -323,6 +323,22 @@ button { font: inherit; }
   padding: 12px;
   box-shadow: 0 30px 70px -40px rgba(0, 0, 0, 0.9);
 }
+/* Retrato con movimiento: flotación continua... */
+.hero-float {
+  overflow: hidden;
+  border-radius: 13px;
+  animation: hero-float 6.5s ease-in-out infinite;
+}
+@keyframes hero-float {
+  0%, 100% { transform: translateY(-9px); }
+  50% { transform: translateY(9px); }
+}
+/* ...e inclinación 3D que sigue al puntero (transform aplicado por JS) */
+.hero-tilt {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: transform .3s ease-out;
+  will-change: transform;
+}
 .hero-figure::after {
   content: "";
   position: absolute;
@@ -811,6 +827,8 @@ a.info-item:hover { border-color: rgba(56, 189, 248, 0.5); }
   html { scroll-behavior: auto; }
   [data-reveal] { opacity: 1; transform: none; transition: none; }
   .status-dot { animation: none; }
+  .hero-float { animation: none; }
+  .hero-tilt { transition: none; }
 }
 
 /* ---------- Responsive ---------- */

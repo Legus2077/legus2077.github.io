@@ -124,7 +124,7 @@
       "texto": "Contactar",
       "enlace": "#contacto"
     },
-    "retrato": "professional_portrait_photo_of_a_sharp_approachable_latino_male_software/imagen.png",
+    "retrato": "img/favicon-1790964008828.png",
     "retratoCargo": "DevOps · Lima, PE"
   },
   "sobre": {
@@ -513,13 +513,17 @@
       "</div>" +
       (si(h.retrato)
         ? '<figure class="hero-figure" data-reveal>' +
-            '<img class="portrait" src="' + esc(h.retrato) + '" alt="Retrato profesional de ' + esc(D.general.nombre) + '">' +
-            '<figcaption class="portrait-caption">' +
-              "<div>" +
-                '<div class="who">' + esc(D.general.nombre) + "</div>" +
-                (si(h.retratoCargo) ? '<div class="where">' + esc(h.retratoCargo) + "</div>" : "") +
+            '<div class="hero-float">' +
+              '<div class="hero-tilt">' +
+                '<img class="portrait" src="' + esc(h.retrato) + '" alt="Retrato profesional de ' + esc(D.general.nombre) + '">' +
+                '<figcaption class="portrait-caption">' +
+                  "<div>" +
+                    '<div class="who">' + esc(D.general.nombre) + "</div>" +
+                    (si(h.retratoCargo) ? '<div class="where">' + esc(h.retratoCargo) + "</div>" : "") +
+                  "</div>" +
+                "</figcaption>" +
               "</div>" +
-            "</figcaption>" +
+            "</div>" +
           "</figure>"
         : "");
   })();
@@ -828,6 +832,40 @@
       if (!document.hidden) revelarVisibles();
     });
     window.addEventListener("pageshow", revelarVisibles);
+  })();
+
+  /* ---------- Retrato 3D (inclinación que sigue al puntero) ---------- */
+  (function () {
+    var figura = document.querySelector(".hero-tilt");
+    var zona = document.querySelector(".hero");
+    if (!figura || !zona) return;
+
+    var neutro = "perspective(1000px) rotateX(0deg) rotateY(0deg)";
+
+    /* Se comprueba en cada evento: si el usuario cambia la opción en el sistema, se respeta */
+    function permitido() {
+      if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return false;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return false;
+      return true;
+    }
+
+    zona.addEventListener("pointermove", function (ev) {
+      if (!permitido()) return;
+      var r = figura.getBoundingClientRect();
+      if (!r.width || !r.height) return;
+      var dx = (ev.clientX - (r.left + r.width / 2)) / (window.innerWidth / 2);
+      var dy = (ev.clientY - (r.top + r.height / 2)) / (window.innerHeight / 2);
+      dx = Math.max(-1, Math.min(1, dx));
+      dy = Math.max(-1, Math.min(1, dy));
+      figura.style.transform =
+        "perspective(1000px)" +
+        " rotateX(" + (-dy * 9).toFixed(2) + "deg)" +  /* cursor arriba → la foto mira arriba */
+        " rotateY(" + (dx * 13).toFixed(2) + "deg)";   /* cursor a la derecha → gira a la derecha */
+    });
+
+    zona.addEventListener("pointerleave", function () {
+      figura.style.transform = neutro;
+    });
   })();
 })();
 </script>
