@@ -1,765 +1,836 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leonardo Condori · Ingeniero de Sistemas — Full-Stack &amp; DevOps</title>
+<meta name="description" content="Portafolio de Leonardo Condori, Ingeniero de Sistemas en Lima: arquitecturas distribuidas, desarrollo full-stack y automatización DevOps.">
+<meta name="theme-color" content="#070d18">
+<link rel="canonical" href="https://legus2077.github.io/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#1a202b","on-background":"#dde2f3","on-error":"#690005","outline":"#8c90a0","on-secondary-fixed-variant":"#004c69","surface-variant":"#2f3541","surface-container-high":"#242a36","outline-variant":"#424654","on-surface":"#dde2f3","error":"#ffb4ab","primary-fixed-dim":"#b1c6ff","secondary-container":"#00a6e0","on-secondary-container":"#00374d","on-surface-variant":"#c2c6d6","secondary-fixed":"#c4e7ff","on-secondary":"#00354a","primary":"#b1c6ff","on-secondary-fixed":"#001e2c","surface-container-highest":"#2f3541","inverse-primary":"#0057cd","surface-container-low":"#161c27","on-primary-fixed-variant":"#00419d","on-tertiary":"#20304d","background":"#0d131f","secondary-fixed-dim":"#7bd0ff","tertiary-container":"#8191b2","error-container":"#93000a","on-primary-container":"#002662","inverse-on-surface":"#2a303d","tertiary-fixed-dim":"#b7c7ea","surface-dim":"#0d131f","surface-container-lowest":"#080e19","surface":"#0d131f","on-tertiary-fixed":"#091b36","on-primary":"#002c70","tertiary":"#b7c7ea","surface-bright":"#333946","on-tertiary-fixed-variant":"#374764","surface-tint":"#b1c6ff","on-tertiary-container":"#192a45","on-error-container":"#ffdad6","primary-fixed":"#d9e2ff","tertiary-fixed":"#d7e2ff","primary-container":"#578cff","on-primary-fixed":"#001946","inverse-surface":"#dde2f3","secondary":"#7bd0ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-sm":"0.5rem","gutter-mobile":"1rem","space-md":"1rem","margin-mobile":"1.25rem","space-xl":"2.5rem","space-lg":"1.5rem","margin":"3rem","space-xs":"0.25rem","gutter":"1.5rem"},fontFamily:{"headline-lg-mobile":["Plus Jakarta Sans"],"label-mono-sm":["JetBrains Mono"],"body-lg":["Inter"],"body-sm":["Inter"],"display-xl":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-code":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"display-xl-mobile":["Plus Jakarta Sans"]},fontSize:{"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.015em",fontWeight:"700"}],"label-mono-sm":["11px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.005em",fontWeight:"400"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0",fontWeight:"400"}],"display-xl":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-code":["13px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"500"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"display-xl-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_-2px_rgba(0,0,0,0.5)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Leonardo Condori Monogram Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XUm1Xy1FfJkvOfvbMkp_BF6mCMyxxOCFsobY5mYz4A4X-WWpobdCnGrGdEHB7KdF-Qx3xCbySZLLgA68VZITSr27n424PcC9nXX4tcWrBInbWcgocH_4RrTo5K5nJ-_rinH4us4YjBLm_F5S81siZYQhB07THtQZrCfDsQY6aQN-rnUXDlgFx88AcJIP0ndSzodBW0sh0CqZ9Ym1qOeeA5k5pvGW-N4gclsc9qrrY8_p97UubVa9dFmg"/><div class="flex flex-col"><span class="font-headline-md text-body-md text-on-surface tracking-tight font-semibold">Leonardo Condori</span><span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase tracking-widest">Ingeniero de Sistemas</span></div></div><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors duration-200 text-primary font-semibold" data-path="inicio" href="#hero">Inicio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="sobre-mi" href="#about">Sobre Mí</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="proyectos" href="#projects">Proyectos</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="habilidades" href="#skills">Habilidades</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="contacto" href="#contact">Contacto</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center px-space-md py-space-xs rounded-xl bg-primary-container text-on-primary-container font-body-sm text-body-sm font-medium shadow-[0_0_20px_rgba(61,123,245,0.35)] hover:shadow-[0_0_24px_rgba(56,189,248,0.5)] hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-200 active:scale-95" href="#contact">Contáctame</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-secondary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfVyg6pWjC6cYzDhXAFwHxw1qQG-29V75KdGDoaGRwJGo8d6Xa_eEbUbJyqZm3viqUQfwT_cQqM8F9yWW_Jvv5c750VrSClbxWV_bfPLFaY9cTlJhsxmpJP4W6NF2KmRy8A8ArCa6SvHRQARJyaVG66wbw3nuaLBKum1hyKqqFFBrnrPius91djYfZ4sxCrw-JFa8_4hKkyRhgGPhwFutGhJRhgwJlwdaGNh4vSj3ldUwuns184tcP"/></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
-<!-- Interactive Style Helpers -->
-<style>
-    html { scroll-behavior: smooth; }
-    .telemetry-grid {
-      background-size: 28px 28px;
-      background-image: radial-gradient(circle, rgba(123, 208, 255, 0.08) 1px, transparent 1px);
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Leonardo Condori">
+<meta property="og:title" content="Leonardo Condori · Ingeniero de Sistemas — Full-Stack &amp; DevOps">
+<meta property="og:description" content="Portafolio de Leonardo Condori: arquitecturas distribuidas, desarrollo full-stack y automatización DevOps.">
+<meta property="og:url" content="https://legus2077.github.io/">
+<meta property="og:image" content="https://legus2077.github.io/professional_portrait_photo_of_a_sharp_approachable_latino_male_software/imagen.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..1&display=block" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+<!-- ============ ENCABEZADO ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="100" height="100" rx="24" fill="#0b1526"></rect>
+        <rect x="1" y="1" width="98" height="98" rx="23" stroke="#1e2e4a" stroke-width="2"></rect>
+        <path d="M28 32V68H48" stroke="#3d7bf5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M72 44C68 36 60 34 52 38C44 42 44 58 52 62C60 66 68 64 72 56" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"></path>
+        <circle cx="50" cy="50" r="3" fill="#60a5fa"></circle>
+      </svg>
+      <span class="brand-name" id="marca-nombre">Leonardo Condori</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
+      <span class="material-symbols-outlined" aria-hidden="true" style="font-size:22px;">menu</span>
+      <span class="sr-only">Menú</span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <span id="nav-enlaces" style="display:contents"></span>
+      <a class="btn btn-primary btn-sm header-cta" href="#contacto">Contáctame</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ PORTADA ============ -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid" id="hero-cont"></div>
+  </section>
+
+  <!-- ============ SOBRE MÍ ============ -->
+  <section class="section section-soft" id="sobre">
+    <div class="container" id="sobre-cont"></div>
+  </section>
+
+  <!-- ============ EXPERIENCIA / PROYECTOS ============ -->
+  <section class="section" id="proyectos">
+    <div class="container" id="proyectos-cont"></div>
+  </section>
+
+  <!-- ============ PROYECTOS PERSONALES ============ -->
+  <section class="section section-soft" id="personales">
+    <div class="container" id="personales-cont"></div>
+  </section>
+
+  <!-- ============ HABILIDADES ============ -->
+  <section class="section" id="habilidades">
+    <div class="container" id="habilidades-cont"></div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section section-soft" id="contacto">
+    <div class="container" id="contacto-cont"></div>
+  </section>
+</main>
+
+<!-- ============ PIE ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner" id="footer-cont"></div>
+</footer>
+
+<noscript>
+  <div style="max-width:640px;margin:40px auto;padding:20px;border:1px solid #1e2e4a;border-radius:12px;color:#94a3b8;font-family:sans-serif;">
+    Este portafolio necesita JavaScript para mostrarse. Actívalo en tu navegador.
+  </div>
+</noscript>
+
+<!-- ============================================================
+     CONTENIDO DEL SITIO
+     Todo el texto visible vive en este bloque JSON.
+     Edítalo con el panel (abrir-panel.bat) o directamente aquí.
+     ============================================================ -->
+<script id="datos-sitio" type="application/json">
+{
+  "general": {
+    "nombre": "Leonardo Condori",
+    "tituloPagina": "Leonardo Condori · Ingeniero de Sistemas — Full-Stack AI",
+    "descripcion": "Portafolio de Leonardo Condori, Ingeniero de Sistemas en Lima: arquitecturas distribuidas, desarrollo full-stack AI",
+    "imagen": "professional_portrait_photo_of_a_sharp_approachable_latino_male_software/imagen.png",
+    "disponible": true,
+    "disponibleTexto": "Disponible para nuevos desafíos"
+  },
+  "hero": {
+    "kicker": "Hola, soy Leonardo · abierto a nuevos desafíos",
+    "nombre": "Leonardo",
+    "apellido": "Condori",
+    "rol": "Ingeniero de Sistemas · Full-Stack Developer & AI-Assisted Development",
+    "parrafo": "Full-stack developer especializado en WordPress y desarrollo custom. Integro IA en mi flujo de trabajo (Claude Code & OpenCode) para acelerar desarrollo y refactorización. Manejo frontend, backend, bases de datos y despliegue a producción.",
+    "boton1": {
+      "texto": "Ver proyectos",
+      "enlace": "#personales"
+    },
+    "boton2": {
+      "texto": "Contactar",
+      "enlace": "#contacto"
+    },
+    "retrato": "professional_portrait_photo_of_a_sharp_approachable_latino_male_software/imagen.png",
+    "retratoCargo": "DevOps · Lima, PE"
+  },
+  "sobre": {
+    "kicker": "Trayectoria & enfoque",
+    "titulo": "Sobre mí",
+    "frase": "Soy un desarrollador full-stack en formación, comprometido con construir soluciones web de calidad.",
+    "parrafos": [
+      "Trabajo con WordPress y tecnologías custom (React, Node.js) en VS Code, integrando herramientas IA (Claude Code & OpenCode) para optimizar workflows. También me enfoco en seguridad, documentación técnica y arquitecturas escalables. Actualmente fortaleciendo mis habilidades en análisis de sistemas y automatización empresarial."
+    ],
+    "cv": {
+      "texto": "Descargar CV",
+      "enlace": ""
+    },
+    "nota": "Estudiante · 9no Ciclo",
+    "pilares": [
+      {
+        "icono": "account_tree",
+        "titulo": "Arquitectura de Software",
+        "texto": "Diseño distribuido, DDD, patrones de microservicios y contratos de API limpios.",
+        "activo": false
+      },
+      {
+        "icono": "all_inclusive",
+        "titulo": "Automatización & CI/CD",
+        "texto": "Pipelines con GitHub Actions, builds multi-stage en Docker y monitoreo con Prometheus.",
+        "activo": false
+      },
+      {
+        "icono": "devices",
+        "titulo": "Desarrollo centrado en producto",
+        "texto": "Interfaces con React y TypeScript, accesibilidad, performance y métricas de producto.",
+        "activo": false
+      }
+    ]
+  },
+  "proyectos": {
+    "kicker": "Experiencia Laboral",
+    "titulo": "Empleos recientes",
+    "nota": "2026",
+    "items": [
+      {
+        "nombre": "GrowBy",
+        "dominio": "https://growby.tech/",
+        "estado": "",
+        "icono": "trending_up",
+        "descripcion": "Empresa que realiza equipos de desarrollo de software, ecommerce, inteligencia artificial y diseño digital con talento validado de Latinoamérica para entregar proyectos llave en mano con calidad garantizada.",
+        "puntos": [
+          "Diseño de producto",
+          "Desarrollo de software",
+          "Ecommerce"
+        ],
+        "stack": [
+          "Claude code",
+          "PHP",
+          "PostgreSQL",
+          "AWS",
+          "Docker",
+          "Wordpress",
+          "WP LOCAL",
+          "HTML5",
+          "CSS3"
+        ],
+        "demo": "",
+        "codigo": "",
+        "activo": true
+      },
+      {
+        "nombre": "Xducation",
+        "dominio": "https://www.xducation.edu.pe/",
+        "estado": "",
+        "icono": "",
+        "descripcion": "CENTRO DE FORMACION Y ENTRENAMIENTO ACADEMICO EMPRESARIAL XDUCATION S.A.C.",
+        "puntos": [
+          "Diseño de producto",
+          "Desarrollo de software"
+        ],
+        "stack": [
+          "N8N",
+          "Supabase",
+          "Wordpress",
+          "Antigravity"
+        ],
+        "demo": "",
+        "codigo": "",
+        "activo": true
+      }
+    ]
+  },
+  "personales": {
+    "kicker": "Proyectos",
+    "titulo": "Laborales (L), Personales (P) & Universitarios (U)",
+    "nota": "",
+    "items": [
+      {
+        "titulo": "Implementación de un Software para el Registro y Control de Ventas de Contómetros",
+        "tipo": "Sitio web & Software",
+        "anio": "2026",
+        "icono": "U",
+        "descripcion": "Este proyecto implementa un software de escritorio para automatizar el registro y control de ventas de contómetros en pequeñas empresas, reemplazando los procesos manuales para mitigar errores y optimizar la generación de reportes. La solución fue desarrollada de forma local mediante Node.js, Electron y SQLite3 bajo la metodología Scrum, e integró pruebas de calidad y criterios de accesibilidad alineados con la reducción de desigualdades (ODS 10).",
+        "stack": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "Node.js",
+          "Electron",
+          "Ide VS Code",
+          "SQLite3"
+        ],
+        "enlace": "",
+        "textoBoton": "Ver sitio",
+        "activo": true
+      },
+      {
+        "titulo": "Mejora Integral de la Home de Growby: Integración de Plugin Propio, UX y Rendimiento Web",
+        "tipo": "Frontend Development",
+        "anio": "2026",
+        "icono": "L",
+        "descripcion": "Se realizó la optimización de la página principal de Growby mediante la integración de un plugin propio de la empresa, la incorporación de ventanas emergentes (pop-ups), la optimización de imágenes para un mejor rendimiento y el ajuste de títulos y subtítulos para mejorar la claridad de los contenidos.",
+        "stack": [
+          "Wordpress",
+          "PHP",
+          "VS Code",
+          "HTML5",
+          "CSS3",
+          "Docker",
+          "WP LOCAL"
+        ],
+        "enlace": "https://growby.tech/",
+        "textoBoton": "Ver Sitio",
+        "activo": true
+      },
+      {
+        "titulo": "Auditoría Web, Optimización de Rendimiento y Rediseño del Plugin de Empleos para V13",
+        "tipo": "Web Performance / WPO | Custom Plugin Development | Web Auditing & Technical Planning",
+        "anio": "2026",
+        "icono": "L",
+        "descripcion": "Se realizó una intervención integral en la página web del cliente V13 desde la empresa Growby, iniciando con una auditoría web y la optimización de imágenes al formato WebP. Además, se presentó una propuesta de mejoras con estimación de tiempos de entrega y se reestructuró por completo el plugin de oportunidades laborales, transformándolo en un módulo totalmente administrable y reutilizable para múltiples sitios web.",
+        "stack": [
+          "Wordpress",
+          "PHP",
+          "VS Code",
+          "HTML5",
+          "CSS3",
+          "Claude Code",
+          "Docker",
+          "WP LOCAL"
+        ],
+        "enlace": "https://v13sac.com/",
+        "textoBoton": "Ver sitio",
+        "activo": true
+      },
+      {
+        "titulo": "Auditoría de Datos del Catálogo Web y Propuesta de Optimización de Carga – Capeagro",
+        "tipo": "Control de Calidad Web y Auditoría de Contenidos (Web QA & Content Auditing)",
+        "anio": "2026",
+        "icono": "L",
+        "descripcion": "Para el cliente Capeagro, se realizó una auditoría y verificación manual exhaustiva del sitio web, con especial énfasis en el módulo buscador de productos y sus descripciones, asegurando que toda la información coincidiera de manera precisa con los datos proporcionados por el cliente. Adicionalmente, se presentó una propuesta de optimización de rendimiento recomendando la conversión masiva de imágenes al formato WebP para acelerar la velocidad de carga de la web.",
+        "stack": [
+          "Wordpress",
+          "PHP",
+          "VS Code",
+          "HTML5",
+          "CSS3",
+          "WP LOCAL"
+        ],
+        "enlace": "https://capeagro.com/",
+        "textoBoton": "Ver sitio",
+        "activo": true
+      }
+    ]
+  },
+  "skills": {
+    "kicker": "Stack tecnológico",
+    "titulo": "Habilidades técnicas",
+    "nota": "",
+    "grupos": [
+      {
+        "titulo": "Frontend",
+        "icono": "code",
+        "nivel": "Avanzado",
+        "texto": "Interfaces reactivas y accesibles con renderizado en el servidor.",
+        "tags": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Vue.js"
+        ],
+        "activo": true
+      },
+      {
+        "titulo": "Backend",
+        "icono": "dns",
+        "nivel": "Intermedio",
+        "texto": "Servicios escalables, lógica orientada a eventos y autenticación segura.",
+        "tags": [
+          "Node.js",
+          "Express",
+          "Python (FastAPI)",
+          "NestJS",
+          "GraphQL"
+        ],
+        "activo": true
+      },
+      {
+        "titulo": "Bases de datos",
+        "icono": "database",
+        "nivel": "Intermedio",
+        "texto": "Modelado relacional y NoSQL, indexación, caching y consistencia de datos.",
+        "tags": [
+          "PostgreSQL",
+          "MongoDB",
+          "Redis",
+          "Supabase",
+          "Prisma ORM"
+        ],
+        "activo": true
+      },
+      {
+        "titulo": "Automatización & DevOps",
+        "icono": "hub",
+        "nivel": "Intermedio",
+        "texto": "Contenerización, despliegue continuo y administración de servidores Linux.",
+        "tags": [
+          "Docker",
+          "Kubernetes",
+          "GitHub Actions",
+          "CI/CD",
+          "Nginx"
+        ],
+        "activo": true
+      },
+      {
+        "titulo": "IA & Integración",
+        "icono": "neurology",
+        "nivel": "Avanzado",
+        "texto": "Integración de LLMs en workflows, agentes y pipelines RAG con búsqueda vectorial.",
+        "tags": [
+          "OpenAI API",
+          "LangChain",
+          "Claude API",
+          "Prompt Engineering",
+          "HuggingFace"
+        ],
+        "activo": true
+      },
+      {
+        "titulo": "Control de versiones",
+        "icono": "source",
+        "nivel": "Avanzado",
+        "texto": "GitFlow y trunk-based, revisión de código y entrega ágil con Scrum.",
+        "tags": [
+          "Git",
+          "GitHub",
+          "GitLab",
+          "Agile / Scrum",
+          "Jira"
+        ],
+        "activo": true
+      }
+    ]
+  },
+  "contacto": {
+    "kicker": "¿Tienes un proyecto en mente?",
+    "titulo": "Hablemos",
+    "parrafo": "Disponible para proyectos. Respondo en menos de 24 horas.",
+    "email": "legus.dev@outlook.com",
+    "telefono": "+51 xxx xxx xxx",
+    "telefonoEnlace": "+51987654321",
+    "ubicacion": "Lima, Perú · Remoto / Híbrido",
+    "formspree": "",
+    "redes": [
+      {
+        "nombre": "LinkedIn",
+        "icono": "work",
+        "enlace": "https://www.linkedin.com/in/leonardo-condori/"
+      },
+      {
+        "nombre": "GitHub",
+        "icono": "code",
+        "enlace": "https://github.com/Legus2077"
+      }
+    ],
+    "copyright": "© 2026 Leonardo Condori. Todos los derechos reservados."
+  },
+  "navegacion": [
+    {
+      "texto": "Sobre mí",
+      "enlace": "#sobre"
+    },
+    {
+      "texto": "Proyectos",
+      "enlace": "#proyectos"
+    },
+    {
+      "texto": "Habilidades",
+      "enlace": "#habilidades"
+    },
+    {
+      "texto": "Contacto",
+      "enlace": "#contacto"
     }
-  </style>
-<!-- ==================== HERO SECTION ==================== -->
-<section class="relative w-full telemetry-grid overflow-hidden border-b border-surface-container-high/60 py-space-xl lg:py-24" id="hero">
-<!-- Ambient glowing light sources -->
-<div class="pointer-events-none absolute -top-40 -left-20 w-96 h-96 rounded-full bg-primary-container/20 blur-[130px]"></div>
-<div class="pointer-events-none absolute top-1/2 -right-32 w-96 h-96 rounded-full bg-secondary-container/15 blur-[140px]"></div>
-<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
-<!-- Hero Left Column: Narrative & Metrics -->
-<div class="lg:col-span-7 flex flex-col gap-space-md">
-<!-- Availability Tag -->
-<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-surface-container-low/90 border border-secondary/30 backdrop-blur-md shadow-[0_0_15px_rgba(123,208,255,0.15)]">
-<span class="relative flex h-2.5 w-2.5">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
-</span>
-<span class="font-label-mono-sm text-label-mono-sm text-secondary tracking-wider uppercase font-semibold">👋 Hola, soy • Disponible para nuevos desafíos</span>
-</div>
-<!-- Titles -->
-<div class="flex flex-col gap-space-xs mt-1">
-<h1 class="font-display-xl text-display-xl tracking-tight text-on-surface font-extrabold">
-              Leonardo <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Condori</span>
-</h1>
-<p class="font-headline-md text-headline-md font-semibold text-transparent bg-clip-text bg-gradient-to-r from-secondary-fixed via-secondary to-primary-fixed-dim">
-              Ingeniero de Sistemas • Full-Stack &amp; DevOps Engineer
-            </p>
-</div>
-<!-- Paragraph -->
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mt-1">
-            Especializado en el diseño e implementación de arquitecturas distribuidas de alta disponibilidad, desarrollo web moderno de alto impacto y automatización de pipelines cloud. Transformo requerimientos complejos en sistemas escalables, tolerantes a fallos y centrados en producto.
-          </p>
-<!-- CTAs -->
-<div class="flex flex-wrap items-center gap-space-md pt-2">
-<a class="inline-flex items-center gap-2 px-space-lg py-3 rounded-xl bg-primary-container text-on-primary-container font-headline-md text-body-md font-medium shadow-[0_0_24px_rgba(87,140,255,0.45)] hover:shadow-[0_0_32px_rgba(123,208,255,0.65)] hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95" href="#projects">
-<span class="material-symbols-outlined text-[20px]">terminal</span>
-<span>Ver Proyectos</span>
-</a>
-<a class="inline-flex items-center gap-2 px-space-lg py-3 rounded-xl bg-surface-container-high/80 text-on-surface font-headline-md text-body-md font-medium border border-outline-variant/60 hover:border-secondary hover:text-secondary hover:bg-surface-container-highest transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95 shadow-sm" href="#contact">
-<span class="material-symbols-outlined text-[20px]">mail</span>
-<span>Contactar</span>
-</a>
-<a class="inline-flex items-center gap-1.5 px-3 py-3 text-on-surface-variant hover:text-secondary font-label-code text-label-code transition-colors duration-200" href="#about">
-<span>Explorar perfil</span>
-<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
-</a>
-</div>
-<!-- Quick Metrics Bar -->
-<div class="grid grid-cols-3 gap-3 pt-6 mt-3 border-t border-outline-variant/30 max-w-xl">
-<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest/70 border border-outline-variant/20">
-<span class="font-headline-lg text-headline-lg font-bold text-secondary">5+</span>
-<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant uppercase tracking-wider mt-0.5">Años Exp.</span>
-</div>
-<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest/70 border border-outline-variant/20">
-<span class="font-headline-lg text-headline-lg font-bold text-primary">20+</span>
-<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant uppercase tracking-wider mt-0.5">Proyectos Prod</span>
-</div>
-<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest/70 border border-outline-variant/20">
-<span class="font-headline-lg text-headline-lg font-bold text-secondary-fixed">99.9%</span>
-<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant uppercase tracking-wider mt-0.5">Uptime SLA</span>
-</div>
-</div>
-</div>
-<!-- Hero Right Column: Technical ID Card & Visual -->
-<div class="lg:col-span-5 relative flex justify-center items-center">
-<!-- Outer Card container -->
-<div class="relative w-full max-w-[420px] rounded-2xl bg-surface-container-low/95 p-4 sm:p-5 border border-outline-variant/60 shadow-[0_20px_50px_rgba(0,0,0,0.6)] backdrop-blur-xl group hover:border-secondary/50 transition-all duration-500">
-<!-- Terminal titlebar header -->
-<div class="flex items-center justify-between pb-3 mb-4 border-b border-outline-variant/40">
-<div class="flex items-center gap-1.5">
-<span class="w-3 h-3 rounded-full bg-error/80 inline-block"></span>
-<span class="w-3 h-3 rounded-full bg-amber-400/80 inline-block"></span>
-<span class="w-3 h-3 rounded-full bg-emerald-400/80 inline-block"></span>
-</div>
-<span class="font-label-mono-sm text-label-mono-sm text-outline tracking-wider font-semibold">leonardo@sys-node-01:~$</span>
-<span class="material-symbols-outlined text-[16px] text-outline">dns</span>
-</div>
-<!-- Image with glowing rim -->
-<div class="relative aspect-square w-full rounded-xl overflow-hidden bg-surface-container-highest shadow-inner">
-<img alt="Retrato profesional de Leonardo Condori, Ingeniero de Sistemas" class="w-full h-full object-cover object-center filter contrast-[1.05] brightness-95 group-hover:scale-105 transition-transform duration-700 ease-out" src="https://raw.githubusercontent.com/Legus2077/legus2077.github.io/refs/heads/main/professional_portrait_photo_of_a_sharp_approachable_latino_male_software/imagen.png"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
-<!-- Quick ID Badge over image -->
-<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low/85 backdrop-blur-md border border-outline-variant/40">
-<div class="flex flex-col">
-<span class="font-label-code text-label-code text-on-surface font-semibold">Leonardo Condori</span>
-<span class="font-label-mono-sm text-label-mono-sm text-secondary">DevOps • Lima, PE</span>
-</div>
-<span class="px-2 py-0.5 rounded bg-primary/20 text-primary font-label-mono-sm text-label-mono-sm border border-primary/30">VERIFIED</span>
-</div>
-</div>
-<!-- Orbiting / Floating Tech Chips -->
-<div class="mt-4 grid grid-cols-2 gap-2">
-<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container/70 border border-outline-variant/30 hover:border-secondary/40 transition-colors">
-<span class="material-symbols-outlined text-[18px] text-secondary">deployed_code</span>
-<div class="flex flex-col">
-<span class="font-label-code text-[12px] text-on-surface font-medium leading-none">Docker • K8s</span>
-<span class="font-label-mono-sm text-[10px] text-outline mt-0.5">Containers</span>
-</div>
-</div>
-<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container/70 border border-outline-variant/30 hover:border-secondary/40 transition-colors">
-<span class="material-symbols-outlined text-[18px] text-primary">data_object</span>
-<div class="flex flex-col">
-<span class="font-label-code text-[12px] text-on-surface font-medium leading-none">Next.js • React</span>
-<span class="font-label-mono-sm text-[10px] text-outline mt-0.5">Frontend App</span>
-</div>
-</div>
-<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container/70 border border-outline-variant/30 hover:border-secondary/40 transition-colors">
-<span class="material-symbols-outlined text-[18px] text-secondary-fixed">bolt</span>
-<div class="flex flex-col">
-<span class="font-label-code text-[12px] text-on-surface font-medium leading-none">Python • Node</span>
-<span class="font-label-mono-sm text-[10px] text-outline mt-0.5">Backend APIs</span>
-</div>
-</div>
-<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container/70 border border-outline-variant/30 hover:border-secondary/40 transition-colors">
-<span class="material-symbols-outlined text-[18px] text-tertiary">storage</span>
-<div class="flex flex-col">
-<span class="font-label-code text-[12px] text-on-surface font-medium leading-none">Postgres • Redis</span>
-<span class="font-label-mono-sm text-[10px] text-outline mt-0.5">Data Layers</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== ABOUT SECTION ==================== -->
-<section class="w-full py-space-xl border-b border-surface-container-high/60 bg-surface-container-lowest/60" id="about">
-<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
-<!-- Section Header -->
-<div class="flex flex-col gap-1 mb-space-lg">
-<div class="flex items-center gap-2">
-<span class="h-1.5 w-6 rounded bg-secondary"></span>
-<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase tracking-widest font-semibold">TRAYECTORIA &amp; ENFOQUE</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Sobre Mí</h2>
-</div>
-<!-- Main Profile Card -->
-<div class="p-6 lg:p-8 rounded-2xl bg-surface-container-low border border-outline-variant/50 shadow-[0_8px_30px_rgba(0,0,0,0.4)] backdrop-blur-sm transition-all duration-300 hover:border-secondary/40">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<!-- Narrative Column -->
-<div class="lg:col-span-7 flex flex-col gap-4">
-<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">
-              Ingeniería con foco en resiliencia de sistemas, eficiencia operativa y arquitectura limpia.
-            </h3>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Como Ingeniero de Sistemas, concibo cada desarrollo como un subsistema interconectado donde el rendimiento del frontend, la robustez del backend y la orquestación en la nube deben coexistir en perfecta armonía. Mi experiencia abarca desde el diseño de microservicios y bases de datos relacionales optimizadas, hasta la implementación de flujos CI/CD con monitoreo de telemetría continua.
-            </p>
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-              Creo firmemente en el poder de la automatización pragmática: reducir fricciones en los despliegues, proteger la seguridad en cada capa y entregar valor de negocio rápido con interfaces de usuario intuitivas y ultra reactivas.
-            </p>
-<!-- Download CV / Actions -->
-<div class="pt-4 flex flex-wrap items-center gap-space-md">
-<a class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-xl bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container font-headline-md text-body-sm font-medium border border-outline-variant/50 hover:border-transparent transition-all duration-200 shadow-sm" href="#contact">
-<span class="material-symbols-outlined text-[18px]">download</span>
-<span>Descargar Resumen / CV</span>
-</a>
-<div class="flex items-center gap-2 text-on-surface-variant font-label-mono-sm text-label-mono-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
-<span>Titulado • CIP Colegiado Activo</span>
-</div>
-</div>
-</div>
-<!-- 3 Pillars Sub-cards Column -->
-<div class="lg:col-span-5 flex flex-col gap-3">
-<!-- Pillar 1 -->
-<div class="p-4 rounded-xl bg-surface-container/90 border border-outline-variant/40 hover:border-secondary/50 transition-all duration-300 hover:translate-x-1 group">
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-lg bg-primary-container/20 text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
-<span class="material-symbols-outlined text-[22px]">account_tree</span>
-</div>
-<div class="flex flex-col">
-<h4 class="font-headline-md text-body-md font-semibold text-on-surface">Arquitectura de Software</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-                    Diseño distribuido, Domain-Driven Design (DDD), patrones de microservicios y contratos de API limpios.
-                  </p>
-</div>
-</div>
-</div>
-<!-- Pillar 2 -->
-<div class="p-4 rounded-xl bg-surface-container/90 border border-outline-variant/40 hover:border-secondary/50 transition-all duration-300 hover:translate-x-1 group">
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-lg bg-secondary/20 text-secondary group-hover:bg-secondary-container group-hover:text-on-secondary-container transition-colors">
-<span class="material-symbols-outlined text-[22px]">all_inclusive</span>
-</div>
-<div class="flex flex-col">
-<h4 class="font-headline-md text-body-md font-semibold text-on-surface">Automatización &amp; CI/CD</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-                    Pipelines de entrega continua con GitHub Actions, Docker multi-stage builds y monitoreo con Prometheus.
-                  </p>
-</div>
-</div>
-</div>
-<!-- Pillar 3 -->
-<div class="p-4 rounded-xl bg-surface-container/90 border border-outline-variant/40 hover:border-secondary/50 transition-all duration-300 hover:translate-x-1 group">
-<div class="flex items-start gap-3">
-<div class="p-2.5 rounded-lg bg-tertiary-container/30 text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
-<span class="material-symbols-outlined text-[22px]">devices</span>
-</div>
-<div class="flex flex-col">
-<h4 class="font-headline-md text-body-md font-semibold text-on-surface">Desarrollo Centrado en Producto</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
-                    Interfaces intuitivas con React y TypeScript, accesibilidad, performance web y métricas de retención.
-                  </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== PROJECTS SECTION ==================== -->
-<section class="w-full py-space-xl border-b border-surface-container-high/60" id="projects">
-<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
-<!-- Section Header -->
-<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-space-lg">
-<div class="flex flex-col gap-1">
-<div class="flex items-center gap-2">
-<span class="h-1.5 w-6 rounded bg-secondary"></span>
-<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase tracking-widest font-semibold">TRABAJOS DESTACADOS</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Proyectos Recientes</h2>
-</div>
-<span class="font-label-code text-label-code text-on-surface-variant">Sistemas desplegados en producción // 2023 - 2024</span>
-</div>
-<!-- Projects Grid -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-<!-- PROJECT 1: GrowBy -->
-<article class="flex flex-col rounded-2xl bg-surface-container-low border border-outline-variant/50 overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.5)] transition-all duration-300 hover:-translate-y-1.5 hover:border-secondary hover:shadow-[0_12px_36px_rgba(61,123,245,0.25)] group">
-<!-- Window Top Bar -->
-<div class="px-4 py-3 bg-surface-container-lowest border-b border-outline-variant/30 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px] text-secondary">trending_up</span>
-<span class="font-label-mono-sm text-label-mono-sm text-on-surface font-semibold">app.growby.io</span>
-</div>
-<span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-label-mono-sm text-[10px] font-semibold uppercase tracking-wider">LIVE MVP</span>
-</div>
-<!-- Simulated Architecture / Tech Vis Header -->
-<div class="relative p-5 bg-gradient-to-br from-surface-container-high/90 to-surface-container/60 border-b border-outline-variant/20 flex flex-col justify-between min-h-[140px]">
-<div class="flex items-center justify-between">
-<span class="font-label-code text-label-code text-secondary font-semibold">GROWBY // ANALYTICS SUITE</span>
-<span class="material-symbols-outlined text-[24px] text-outline-variant group-hover:text-secondary transition-colors">insights</span>
-</div>
-<div class="flex flex-col gap-1 mt-3">
-<div class="flex justify-between items-center text-[11px] font-label-mono-sm text-on-surface-variant">
-<span>Data Ingestion Latency</span>
-<span class="text-secondary font-semibold">~42ms</span>
-</div>
-<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
-<div class="bg-secondary h-full rounded-full w-[88%]"></div>
-</div>
-</div>
-</div>
-<!-- Card Content -->
-<div class="p-6 flex flex-col flex-1 justify-between gap-5">
-<div class="flex flex-col gap-3">
-<h3 class="font-headline-md text-headline-md text-on-surface font-bold group-hover:text-primary transition-colors">
-                GrowBy
-              </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                Plataforma integral de analítica, optimización y crecimiento para startups e e-commerce. Provee tableros en tiempo real para atribución de canales de venta y forecasting de demanda.
-              </p>
-<!-- Feature Bullets -->
-<ul class="flex flex-col gap-1.5 pt-2">
-<li class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
-<span>Live metrics dashboard y embudos de conversión</span>
-</li>
-<li class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
-<span>Automated sales tracking &amp; webhook processing</span>
-</li>
-<li class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
-<span>Autenticación RBAC y multi-tenant isolation</span>
-</li>
-</ul>
-</div>
-<!-- Tech Stack & Links -->
-<div class="flex flex-col gap-4 pt-3 border-t border-outline-variant/30">
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">Next.js</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">TypeScript</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">PostgreSQL</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">AWS</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">Docker</span>
-</div>
-<div class="flex items-center gap-3">
-<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-primary-container text-on-primary-container font-headline-md text-body-sm font-medium hover:bg-secondary-container transition-all" href="#contact">
-<span class="material-symbols-outlined text-[16px]">visibility</span>
-<span>Ver Demo en Vivo</span>
-</a>
-<a class="inline-flex items-center justify-center p-2 rounded-lg bg-surface-container-high text-on-surface hover:text-secondary hover:border-secondary border border-outline-variant/40 transition-colors" href="#contact" title="Ver Repositorio">
-<span class="material-symbols-outlined text-[18px]">code</span>
-</a>
-</div>
-</div>
-</div>
-</article>
-<!-- PROJECT 2: Xducation -->
-<article class="flex flex-col rounded-2xl bg-surface-container-low border border-outline-variant/50 overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.5)] transition-all duration-300 hover:-translate-y-1.5 hover:border-secondary hover:shadow-[0_12px_36px_rgba(61,123,245,0.25)] group">
-<!-- Window Top Bar -->
-<div class="px-4 py-3 bg-surface-container-lowest border-b border-outline-variant/30 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px] text-primary">school</span>
-<span class="font-label-mono-sm text-label-mono-sm text-on-surface font-semibold">campus.xducation.edu</span>
-</div>
-<span class="px-2 py-0.5 rounded bg-primary/20 text-primary-fixed-dim font-label-mono-sm text-[10px] font-semibold uppercase tracking-wider">DEPLOYED</span>
-</div>
-<!-- Simulated Architecture / Vis Header -->
-<div class="relative p-5 bg-gradient-to-br from-surface-container-high/90 to-surface-container/60 border-b border-outline-variant/20 flex flex-col justify-between min-h-[140px]">
-<div class="flex items-center justify-between">
-<span class="font-label-code text-label-code text-primary font-semibold">XDUCATION // EDTECH LMS</span>
-<span class="material-symbols-outlined text-[24px] text-outline-variant group-hover:text-primary transition-colors">video_camera_front</span>
-</div>
-<div class="flex flex-col gap-1 mt-3">
-<div class="flex justify-between items-center text-[11px] font-label-mono-sm text-on-surface-variant">
-<span>WebRTC Stream Concurrent Users</span>
-<span class="text-primary font-semibold">1,250+</span>
-</div>
-<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
-<div class="bg-primary-container h-full rounded-full w-[94%]"></div>
-</div>
-</div>
-</div>
-<!-- Card Content -->
-<div class="p-6 flex flex-col flex-1 justify-between gap-5">
-<div class="flex flex-col gap-3">
-<h3 class="font-headline-md text-headline-md text-on-surface font-bold group-hover:text-primary transition-colors">
-                Xducation
-              </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                Campus virtual y suite de aprendizaje colaborativo moderno. Cuenta con aulas interactivas sincrónicas, evaluación automatizada con feedback inmediato y seguimiento detallado de progreso.
-              </p>
-<!-- Feature Bullets -->
-<ul class="flex flex-col gap-1.5 pt-2">
-<li class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm">
-<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
-<span>Streaming de baja latencia con WebRTC</span>
-</li>
-<li class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm">
-<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
-<span>Quizzes automatizados con calificación dinámica</span>
-</li>
-<li class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm">
-<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
-<span>Analytics de rendimiento estudiantil y cohortes</span>
-</li>
-</ul>
-</div>
-<!-- Tech Stack & Links -->
-<div class="flex flex-col gap-4 pt-3 border-t border-outline-variant/30">
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">React</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">Node.js</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">MongoDB</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">WebRTC</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">Redis</span>
-</div>
-<div class="flex items-center gap-3">
-<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-surface-container-high hover:bg-primary-container text-on-surface hover:text-on-primary-container font-headline-md text-body-sm font-medium border border-outline-variant/40 hover:border-transparent transition-all" href="#contact">
-<span class="material-symbols-outlined text-[16px]">visibility</span>
-<span>Ver Demo</span>
-</a>
-<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-surface-container-high text-on-surface hover:text-secondary hover:border-secondary border border-outline-variant/40 transition-colors" href="#contact">
-<span class="material-symbols-outlined text-[16px]">settings_suggest</span>
-<span>Detalles Técnicos</span>
-</a>
-</div>
-</div>
-</div>
-</article>
-<!-- PROJECT 3: CloudSentinel -->
-<article class="flex flex-col rounded-2xl bg-surface-container-low border border-outline-variant/50 overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.5)] transition-all duration-300 hover:-translate-y-1.5 hover:border-secondary hover:shadow-[0_12px_36px_rgba(61,123,245,0.25)] group">
-<!-- Window Top Bar -->
-<div class="px-4 py-3 bg-surface-container-lowest border-b border-outline-variant/30 flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px] text-secondary-fixed">shield</span>
-<span class="font-label-mono-sm text-label-mono-sm text-on-surface font-semibold">cluster.cloudsentinel.net</span>
-</div>
-<span class="px-2 py-0.5 rounded bg-secondary-fixed-dim/20 text-secondary-fixed font-label-mono-sm text-[10px] font-semibold uppercase tracking-wider">ENTERPRISE</span>
-</div>
-<!-- Simulated Architecture / Vis Header -->
-<div class="relative p-5 bg-gradient-to-br from-surface-container-high/90 to-surface-container/60 border-b border-outline-variant/20 flex flex-col justify-between min-h-[140px]">
-<div class="flex items-center justify-between">
-<span class="font-label-code text-label-code text-secondary-fixed font-semibold">CLOUDSENTINEL // SRE ENGINE</span>
-<span class="material-symbols-outlined text-[24px] text-outline-variant group-hover:text-secondary-fixed transition-colors">cloud_sync</span>
-</div>
-<div class="flex flex-col gap-1 mt-3">
-<div class="flex justify-between items-center text-[11px] font-label-mono-sm text-on-surface-variant">
-<span>Cluster Node Health Index</span>
-<span class="text-secondary-fixed font-semibold">99.98% OK</span>
-</div>
-<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
-<div class="bg-secondary-fixed h-full rounded-full w-[99%]"></div>
-</div>
-</div>
-</div>
-<!-- Card Content -->
-<div class="p-6 flex flex-col flex-1 justify-between gap-5">
-<div class="flex flex-col gap-3">
-<h3 class="font-headline-md text-headline-md text-on-surface font-bold group-hover:text-secondary-fixed transition-colors">
-                CloudSentinel
-              </h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                Sistema distribuido de monitoreo, telemetría y alertas automáticas de infraestructura multicloud. Centraliza logs, detecta anomalías con umbrales adaptativos y ejecuta scripts de autoreparación.
-              </p>
-<!-- Feature Bullets -->
-<ul class="flex flex-col gap-1.5 pt-2">
-<li class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary-fixed">check_circle</span>
-<span>Alertas automáticas vía Slack, Webhooks y Pager</span>
-</li>
-<li class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary-fixed">check_circle</span>
-<span>Dashboards dinámicos Grafana con métricas Prometheus</span>
-</li>
-<li class="flex items-center gap-2 text-on-surface text-body-sm font-body-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary-fixed">check_circle</span>
-<span>Orquestación de microservicios con Kubernetes y Helm</span>
-</li>
-</ul>
-</div>
-<!-- Tech Stack & Links -->
-<div class="flex flex-col gap-4 pt-3 border-t border-outline-variant/30">
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2 py-0.5 rounded bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">Python</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">FastAPI</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">Docker</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">Kubernetes</span>
-<span class="px-2 py-0.5 rounded bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">Prometheus</span>
-</div>
-<div class="flex items-center gap-3">
-<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg bg-surface-container-high hover:bg-secondary-container text-on-surface hover:text-on-secondary-container font-headline-md text-body-sm font-medium border border-outline-variant/40 hover:border-transparent transition-all" href="#contact">
-<span class="material-symbols-outlined text-[16px]">visibility</span>
-<span>Ver Arquitectura</span>
-</a>
-<a class="inline-flex items-center justify-center p-2 rounded-lg bg-surface-container-high text-on-surface hover:text-secondary hover:border-secondary border border-outline-variant/40 transition-colors" href="#contact" title="Código Fuente">
-<span class="material-symbols-outlined text-[18px]">code</span>
-</a>
-</div>
-</div>
-</div>
-</article>
-</div>
-</div>
-</section>
-<!-- ==================== SKILLS SECTION ==================== -->
-<section class="w-full py-space-xl border-b border-surface-container-high/60 bg-surface-container-lowest/60" id="skills">
-<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin">
-<!-- Section Header -->
-<div class="flex flex-col gap-1 mb-space-lg">
-<div class="flex items-center gap-2">
-<span class="h-1.5 w-6 rounded bg-secondary"></span>
-<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase tracking-widest font-semibold">STACK TECNOLÓGICO</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Habilidades Técnicas</h2>
-</div>
-<!-- Skills Grid (6 Domain Cards) -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- 1. Frontend -->
-<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/40 shadow-md hover:border-secondary hover:shadow-[0_8px_30px_rgba(61,123,245,0.2)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="p-3 rounded-xl bg-surface-container-high text-secondary border border-outline-variant/30 group-hover:border-secondary/40 transition-colors">
-<span class="material-symbols-outlined text-[28px]">code</span>
-</div>
-<span class="font-label-mono-sm text-label-mono-sm text-outline font-semibold">NIVEL • AVANZADO</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-2">Frontend</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
-              Construcción de interfaces reactivas, accesibles y con renderizado del lado del servidor de máxima velocidad.
-            </p>
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">React</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">Next.js</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">TypeScript</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">Tailwind CSS</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">Redux Toolkit</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">Vue.js</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">HTML5 / CSS3</span>
-</div>
-</div>
-<div class="mt-6 pt-3 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant font-label-mono-sm text-[11px]">
-<span>Performance audit score</span>
-<span class="text-secondary font-semibold">98/100</span>
-</div>
-</div>
-<!-- 2. Backend -->
-<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/40 shadow-md hover:border-secondary hover:shadow-[0_8px_30px_rgba(61,123,245,0.2)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="p-3 rounded-xl bg-surface-container-high text-primary border border-outline-variant/30 group-hover:border-primary/40 transition-colors">
-<span class="material-symbols-outlined text-[28px]">dns</span>
-</div>
-<span class="font-label-mono-sm text-label-mono-sm text-outline font-semibold">NIVEL • SENIOR</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-2">Backend</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
-              Servicios escalables, lógica de negocio orientada a eventos, autenticación segura y protocolos eficientes.
-            </p>
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">Node.js</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">Express</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">Python (FastAPI)</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">Django</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">NestJS</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">RESTful APIs</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary font-label-mono-sm text-label-mono-sm border border-primary/20">GraphQL</span>
-</div>
-</div>
-<div class="mt-6 pt-3 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant font-label-mono-sm text-[11px]">
-<span>Throughput concurrency</span>
-<span class="text-primary font-semibold">15K req/s</span>
-</div>
-</div>
-<!-- 3. Databases -->
-<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/40 shadow-md hover:border-secondary hover:shadow-[0_8px_30px_rgba(61,123,245,0.2)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="p-3 rounded-xl bg-surface-container-high text-tertiary border border-outline-variant/30 group-hover:border-tertiary/40 transition-colors">
-<span class="material-symbols-outlined text-[28px]">database</span>
-</div>
-<span class="font-label-mono-sm text-label-mono-sm text-outline font-semibold">NIVEL • AVANZADO</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-2">Databases</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
-              Modelado relacional y NoSQL, estrategias de indexación, caching de alta velocidad y consistencia de datos.
-            </p>
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-tertiary font-label-mono-sm text-label-mono-sm border border-tertiary/20">PostgreSQL</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-tertiary font-label-mono-sm text-label-mono-sm border border-tertiary/20">MongoDB</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-tertiary font-label-mono-sm text-label-mono-sm border border-tertiary/20">MySQL</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-tertiary font-label-mono-sm text-label-mono-sm border border-tertiary/20">Redis</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-tertiary font-label-mono-sm text-label-mono-sm border border-tertiary/20">Supabase</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-tertiary font-label-mono-sm text-label-mono-sm border border-tertiary/20">Prisma ORM</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-tertiary font-label-mono-sm text-label-mono-sm border border-tertiary/20">Query Tuning</span>
-</div>
-</div>
-<div class="mt-6 pt-3 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant font-label-mono-sm text-[11px]">
-<span>Cache hit ratio avg</span>
-<span class="text-tertiary font-semibold">96.4%</span>
-</div>
-</div>
-<!-- 4. Automation & DevOps -->
-<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/40 shadow-md hover:border-secondary hover:shadow-[0_8px_30px_rgba(61,123,245,0.2)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="p-3 rounded-xl bg-surface-container-high text-secondary-fixed border border-outline-variant/30 group-hover:border-secondary-fixed/40 transition-colors">
-<span class="material-symbols-outlined text-[28px]">hub</span>
-</div>
-<span class="font-label-mono-sm text-label-mono-sm text-outline font-semibold">NIVEL • SENIOR</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-2">Automation &amp; DevOps</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
-              Contenerización, automatización de pruebas, despliegue continuo y administración de servidores Linux.
-            </p>
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">Docker</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">Kubernetes</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">GitHub Actions</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">CI/CD Pipelines</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">Linux SysAdmin</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary-fixed font-label-mono-sm text-label-mono-sm border border-secondary-fixed/20">Nginx Reverse Proxy</span>
-</div>
-</div>
-<div class="mt-6 pt-3 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant font-label-mono-sm text-[11px]">
-<span>Deployment frequency</span>
-<span class="text-secondary-fixed font-semibold">Multiple / day</span>
-</div>
-</div>
-<!-- 5. AI Tools & Integration -->
-<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/40 shadow-md hover:border-secondary hover:shadow-[0_8px_30px_rgba(61,123,245,0.2)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="p-3 rounded-xl bg-surface-container-high text-primary-fixed-dim border border-outline-variant/30 group-hover:border-primary-fixed-dim/40 transition-colors">
-<span class="material-symbols-outlined text-[28px]">neurology</span>
-</div>
-<span class="font-label-mono-sm text-label-mono-sm text-outline font-semibold">NIVEL • INTERMEDIO-AVANZADO</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-2">AI Tools &amp; Integration</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
-              Integración de LLMs en workflows empresariales, agentes inteligentes, vector search y pipelines RAG.
-            </p>
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary-fixed-dim font-label-mono-sm text-label-mono-sm border border-primary-fixed-dim/20">OpenAI API</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary-fixed-dim font-label-mono-sm text-label-mono-sm border border-primary-fixed-dim/20">LangChain</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary-fixed-dim font-label-mono-sm text-label-mono-sm border border-primary-fixed-dim/20">Prompt Engineering</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary-fixed-dim font-label-mono-sm text-label-mono-sm border border-primary-fixed-dim/20">Claude API</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary-fixed-dim font-label-mono-sm text-label-mono-sm border border-primary-fixed-dim/20">Vector Embeddings</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-primary-fixed-dim font-label-mono-sm text-label-mono-sm border border-primary-fixed-dim/20">HuggingFace</span>
-</div>
-</div>
-<div class="mt-6 pt-3 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant font-label-mono-sm text-[11px]">
-<span>Semantic search recall</span>
-<span class="text-primary-fixed-dim font-semibold">&gt;94%</span>
-</div>
-</div>
-<!-- 6. Version Control & Workflow -->
-<div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/40 shadow-md hover:border-secondary hover:shadow-[0_8px_30px_rgba(61,123,245,0.2)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
-<div>
-<div class="flex items-center justify-between mb-4">
-<div class="p-3 rounded-xl bg-surface-container-high text-secondary border border-outline-variant/30 group-hover:border-secondary/40 transition-colors">
-<span class="material-symbols-outlined text-[28px]">source</span>
-</div>
-<span class="font-label-mono-sm text-label-mono-sm text-outline font-semibold">NIVEL • AVANZADO</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-2">Version Control &amp; Workflow</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
-              Metodologías de entrega ágiles, ramas estratégicas (GitFlow/Trunk), revisión de código y testing colaborativo.
-            </p>
-<div class="flex flex-wrap gap-1.5">
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">Git</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">GitHub</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">GitLab</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">Agile / Scrum</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">Jira</span>
-<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-mono-sm text-label-mono-sm border border-secondary/20">Code Review Standards</span>
-</div>
-</div>
-<div class="mt-6 pt-3 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant font-label-mono-sm text-[11px]">
-<span>Code Coverage Target</span>
-<span class="text-secondary font-semibold">&gt;85%</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- ==================== CONTACT SECTION ==================== -->
-<section class="w-full py-space-xl relative overflow-hidden" id="contact">
-<!-- Subtle ambient glow -->
-<div class="pointer-events-none absolute bottom-0 right-10 w-96 h-96 rounded-full bg-secondary-container/10 blur-[140px]"></div>
-<div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin relative z-10">
-<!-- Section Header -->
-<div class="flex flex-col gap-1 mb-space-lg">
-<div class="flex items-center gap-2">
-<span class="h-1.5 w-6 rounded bg-secondary"></span>
-<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase tracking-widest font-semibold">¿TIENES UN PROYECTO EN MENTE?</span>
-</div>
-<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Hablemos y Construyamos Juntos</h2>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<!-- Contact Details Left Column -->
-<div class="lg:col-span-5 flex flex-col gap-4">
-<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-2">
-            Estoy disponible para liderar o colaborar en proyectos de ingeniería de sistemas, arquitectura cloud, modernización de software o consultorías técnicas. Escríbeme y responderé en menos de 24 horas.
-          </p>
-<!-- Contact Direct Item: WhatsApp/Phone -->
-<a class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-low border border-outline-variant/40 hover:border-secondary hover:bg-surface-container transition-all duration-300 group shadow-sm" href="tel:+51987654321">
-<div class="p-3 rounded-lg bg-emerald-500/10 text-emerald-400 group-hover:bg-emerald-500 group-hover:text-black transition-colors">
-<span class="material-symbols-outlined text-[24px]">call</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider">Teléfono / WhatsApp</span>
-<span class="font-label-code text-label-code text-on-surface font-semibold group-hover:text-secondary transition-colors">+51 987 654 321</span>
-</div>
-</a>
-<!-- Contact Direct Item: Email -->
-<a class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-low border border-outline-variant/40 hover:border-secondary hover:bg-surface-container transition-all duration-300 group shadow-sm" href="mailto:leonardo.condori@engineering.dev">
-<div class="p-3 rounded-lg bg-primary-container/20 text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
-<span class="material-symbols-outlined text-[24px]">mail</span>
-</div>
-<div class="flex flex-col min-w-0">
-<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider">Email Profesional</span>
-<span class="font-label-code text-label-code text-on-surface font-semibold truncate group-hover:text-secondary transition-colors">leonardo.condori@engineering.dev</span>
-</div>
-</a>
-<!-- Contact Direct Item: Location -->
-<div class="flex items-center gap-4 p-4 rounded-xl bg-surface-container-low border border-outline-variant/40 shadow-sm">
-<div class="p-3 rounded-lg bg-surface-container-high text-secondary">
-<span class="material-symbols-outlined text-[24px]">location_on</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider">Ubicación y Modalidad</span>
-<span class="font-body-sm text-body-sm text-on-surface font-medium">Lima, Perú (Disponible para Remoto / Híbrido)</span>
-</div>
-</div>
-<!-- Social Links Grid -->
-<div class="pt-2 flex flex-col gap-2">
-<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider">Perfiles Profesionales</span>
-<div class="flex items-center gap-3">
-<a class="flex-1 flex items-center justify-center gap-2 p-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-on-surface hover:text-secondary hover:border-secondary hover:bg-surface-container transition-all duration-200" href="https://linkedin.com" rel="noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[18px]">share</span>
-<span class="font-label-code text-label-code font-medium">LinkedIn</span>
-</a>
-<a class="flex-1 flex items-center justify-center gap-2 p-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-on-surface hover:text-secondary hover:border-secondary hover:bg-surface-container transition-all duration-200" href="https://github.com" rel="noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[18px]">terminal</span>
-<span class="font-label-code text-label-code font-medium">GitHub</span>
-</a>
-<a class="flex-1 flex items-center justify-center gap-2 p-3 rounded-xl bg-surface-container-low border border-outline-variant/40 text-on-surface hover:text-secondary hover:border-secondary hover:bg-surface-container transition-all duration-200" href="https://twitter.com" rel="noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[18px]">tag</span>
-<span class="font-label-code text-label-code font-medium">X / Twitter</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Interactive Form Right Column -->
-<div class="lg:col-span-7">
-<div class="p-6 sm:p-8 rounded-2xl bg-surface-container-low border border-outline-variant/50 shadow-[0_12px_40px_rgba(0,0,0,0.5)] backdrop-blur-md">
-<div class="flex items-center justify-between pb-4 mb-6 border-b border-outline-variant/30">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-[20px]">send</span>
-<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Enviar Mensaje Directo</h3>
-</div>
-<span class="font-label-mono-sm text-label-mono-sm text-outline">PROTOCOLO SEGURO // TLS</span>
-</div>
-<form class="flex flex-col gap-4" id="contactForm" onsubmit="event.preventDefault(); const btn = document.getElementById('submitBtn'); btn.innerHTML = '✓ ¡Mensaje Enviado con Éxito!'; btn.classList.remove('bg-primary-container'); btn.classList.add('bg-emerald-600', 'text-white'); setTimeout(() =&gt; { btn.innerHTML = '&lt;span class=\'material-symbols-outlined text-[18px]\'&gt;send&lt;/span&gt;&lt;span&gt;Enviar Mensaje&lt;/span&gt;'; btn.classList.add('bg-primary-container'); btn.classList.remove('bg-emerald-600', 'text-white'); document.getElementById('contactForm').reset(); }, 4000);">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<!-- Nombre -->
-<div class="flex flex-col gap-1.5">
-<label class="font-label-mono-sm text-label-mono-sm text-on-surface uppercase tracking-wider font-semibold" for="nameInput">
-                    Nombre Completo <span class="text-secondary">*</span>
-</label>
-<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" id="nameInput" placeholder="Ej. Ing. Carlos Mendoza" required="" type="text"/>
-</div>
-<!-- Correo -->
-<div class="flex flex-col gap-1.5">
-<label class="font-label-mono-sm text-label-mono-sm text-on-surface uppercase tracking-wider font-semibold" for="emailInput">
-                    Correo Electrónico <span class="text-secondary">*</span>
-</label>
-<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" id="emailInput" placeholder="carlos@empresa.com" required="" type="email"/>
-</div>
-</div>
-<!-- Asunto -->
-<div class="flex flex-col gap-1.5">
-<label class="font-label-mono-sm text-label-mono-sm text-on-surface uppercase tracking-wider font-semibold" for="subjectInput">
-                  Asunto del Proyecto <span class="text-secondary">*</span>
-</label>
-<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" id="subjectInput" placeholder="Ej. Arquitectura para sistema SaaS / Consulta técnica" required="" type="text"/>
-</div>
-<!-- Mensaje -->
-<div class="flex flex-col gap-1.5">
-<label class="font-label-mono-sm text-label-mono-sm text-on-surface uppercase tracking-wider font-semibold" for="messageInput">
-                  Detalles del Requerimiento <span class="text-secondary">*</span>
-</label>
-<textarea class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/60 text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all resize-none" id="messageInput" placeholder="Describe brevemente el alcance de la propuesta, stack técnico o meta del proyecto..." required="" rows="4"></textarea>
-</div>
-<!-- Submit button -->
-<div class="pt-2 flex items-center justify-between">
-<span class="font-label-mono-sm text-[11px] text-outline">
-                  Respuesta garantizada en &lt; 24h
-                </span>
-<button class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary-container text-on-primary-container font-headline-md text-body-md font-medium shadow-[0_0_20px_rgba(87,140,255,0.4)] hover:shadow-[0_0_28px_rgba(123,208,255,0.6)] hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300 transform active:scale-95 cursor-pointer" id="submitBtn" type="submit">
-<span class="material-symbols-outlined text-[18px]">send</span>
-<span>Enviar Mensaje</span>
-</button>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-4px_20px_-2px_rgba(0,0,0,0.4)] py-space-xl"><div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-sm"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-label-code text-label-code text-secondary">Disponible para nuevos proyectos</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">© 2024 Leonardo Condori. Todos los derechos reservados.</p></div><div class="flex items-center gap-space-lg"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#hero">Inicio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#about">Sobre Mí</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#projects">Proyectos</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#skills">Habilidades</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors duration-200" href="#contact">Contacto</a></div></div></footer></body></html>
+  ]
+}
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  var D;
+  try {
+    D = JSON.parse(document.getElementById("datos-sitio").textContent);
+  } catch (e) {
+    document.body.innerHTML = '<p style="padding:40px;color:#f87171;font-family:sans-serif;">Error al leer el contenido del sitio (bloque datos-sitio).</p>';
+    return;
+  }
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+  function si(v) { return v != null && String(v).trim() !== ""; }
+  function lista(v) { return Array.isArray(v) ? v.filter(si) : []; }
+  function $(id) { return document.getElementById(id); }
+
+  /* ---------- SEO dinámico ---------- */
+  if (si(D.general.tituloPagina)) document.title = D.general.tituloPagina;
+  (function () {
+    var m = document.querySelector('meta[name="description"]');
+    if (m && si(D.general.descripcion)) m.setAttribute("content", D.general.descripcion);
+    if (si(D.general.imagen)) {
+      var abs = /^https?:\/\//i.test(D.general.imagen)
+        ? D.general.imagen
+        : location.origin + "/" + D.general.imagen.replace(/^\.\//, "");
+      ["og:image", "og:title", "og:description"].forEach(function (prop) {
+        var el = document.querySelector('meta[property="' + prop + '"]');
+        if (!el) return;
+        if (prop === "og:image") el.setAttribute("content", abs);
+        if (prop === "og:title") el.setAttribute("content", D.general.tituloPagina || document.title);
+        if (prop === "og:description") el.setAttribute("content", D.general.descripcion || "");
+      });
+    }
+  })();
+
+  /* ---------- Encabezado ---------- */
+  $("marca-nombre").textContent = D.general.nombre || "";
+  $("nav-enlaces").innerHTML = lista(D.navegacion).map(function (n) {
+    return '<a href="' + esc(n.enlace) + '">' + esc(n.texto) + "</a>";
+  }).join("");
+
+  var toggle = $("nav-toggle"), nav = $("nav");
+  toggle.addEventListener("click", function () {
+    var abierto = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", abierto ? "true" : "false");
+  });
+  nav.addEventListener("click", function (ev) {
+    if (ev.target.tagName === "A") nav.classList.remove("is-open");
+  });
+
+  /* ---------- Portada ---------- */
+  (function () {
+    var h = D.hero || {};
+    var nombre = si(h.apellido)
+      ? esc(h.nombre) + ' <span class="grad">' + esc(h.apellido) + "</span>"
+      : esc(h.nombre);
+    var botones = "";
+    if (si(h.boton1 && h.boton1.texto)) {
+      botones += '<a class="btn btn-primary" href="' + esc(h.boton1.enlace || "#") + '">' +
+        '<span class="material-symbols-outlined">arrow_forward</span>' + esc(h.boton1.texto) + "</a>";
+    }
+    if (si(h.boton2 && h.boton2.texto)) {
+      botones += '<a class="btn btn-ghost" href="' + esc(h.boton2.enlace || "#") + '">' + esc(h.boton2.texto) + "</a>";
+    }
+
+    $("hero-cont").innerHTML =
+      '<div class="hero-text" data-reveal>' +
+        (si(h.kicker)
+          ? '<div class="status-pill"><span class="status-dot"></span><span>' + esc(h.kicker) + "</span></div>"
+          : "") +
+        "<h1>" + nombre + "</h1>" +
+        (si(h.rol) ? '<p class="hero-role">' + esc(h.rol) + "</p>" : "") +
+        (si(h.parrafo) ? '<p class="hero-desc">' + esc(h.parrafo) + "</p>" : "") +
+        (botones ? '<div class="hero-actions">' + botones + "</div>" : "") +
+      "</div>" +
+      (si(h.retrato)
+        ? '<figure class="hero-figure" data-reveal>' +
+            '<img class="portrait" src="' + esc(h.retrato) + '" alt="Retrato profesional de ' + esc(D.general.nombre) + '">' +
+            '<figcaption class="portrait-caption">' +
+              "<div>" +
+                '<div class="who">' + esc(D.general.nombre) + "</div>" +
+                (si(h.retratoCargo) ? '<div class="where">' + esc(h.retratoCargo) + "</div>" : "") +
+              "</div>" +
+            "</figcaption>" +
+          "</figure>"
+        : "");
+  })();
+
+  /* ---------- Sobre mí ---------- */
+  (function () {
+    var s = D.sobre || {};
+    var head =
+      '<div class="section-head" data-reveal>' +
+        (si(s.kicker) ? '<div class="kicker-line">' + esc(s.kicker) + "</div>" : "") +
+        (si(s.titulo) ? "<h2>" + esc(s.titulo) + "</h2>" : "") +
+      "</div>";
+
+    var parrafos = lista(s.parrafos).map(function (p) { return "<p>" + esc(p) + "</p>"; }).join("");
+    var acciones = "";
+    if (si(s.cv && s.cv.enlace)) {
+      acciones += '<a class="btn btn-ghost" href="' + esc(s.cv.enlace) + '" target="_blank" rel="noreferrer">' +
+        '<span class="material-symbols-outlined">download</span>' + esc(s.cv.texto || "Descargar CV") + "</a>";
+    }
+    if (si(s.nota)) {
+      acciones += '<span class="about-note"><span class="material-symbols-outlined">verified_user</span>' + esc(s.nota) + "</span>";
+    }
+
+    var pilares = lista(s.pilares).filter(function (p) { return p.activo !== false; }).map(function (p) {
+      return '<div class="pillar" data-reveal>' +
+        '<div class="pillar-ico"><span class="material-symbols-outlined">' + esc(p.icono || "extension") + "</span></div>" +
+        "<div><h4>" + esc(p.titulo) + "</h4>" +
+        (si(p.texto) ? "<p>" + esc(p.texto) + "</p>" : "") +
+        "</div></div>";
+    }).join("");
+
+    $("sobre-cont").innerHTML = head +
+      '<div class="about-grid">' +
+        '<div class="about-text" data-reveal>' +
+          (si(s.frase) ? '<h3 class="about-frase">' + esc(s.frase) + "</h3>" : "") +
+          parrafos +
+          (acciones ? '<div class="about-actions">' + acciones + "</div>" : "") +
+        "</div>" +
+        (pilares ? '<div class="pillars">' + pilares + "</div>" : "") +
+      "</div>";
+  })();
+
+  /* ---------- Proyectos ---------- */
+  (function () {
+    var p = D.proyectos || {};
+    var head =
+      '<div class="section-head" data-reveal>' +
+        (si(p.kicker) ? '<div class="kicker-line">' + esc(p.kicker) + "</div>" : "") +
+        (si(p.titulo) ? "<h2>" + esc(p.titulo) + "</h2>" : "") +
+        (si(p.nota) ? '<p class="section-note">' + esc(p.nota) + "</p>" : "") +
+      "</div>";
+
+    var cards = lista(p.items).filter(function (x) { return x.activo !== false; }).map(function (x) {
+      var links = "";
+      if (si(x.demo)) {
+        links += '<a class="link-btn" href="' + esc(x.demo) + '" target="_blank" rel="noreferrer">' +
+          '<span class="material-symbols-outlined">visibility</span>Ver demo</a>';
+      }
+      if (si(x.codigo)) {
+        links += '<a class="link-btn is-ghost" href="' + esc(x.codigo) + '" target="_blank" rel="noreferrer">' +
+          '<span class="material-symbols-outlined">code</span>' + (si(x.demo) ? "Código" : "Repositorio") + "</a>";
+      }
+      var puntos = lista(x.puntos).map(function (t) {
+        return '<li><span class="material-symbols-outlined">check_circle</span><span>' + esc(t) + "</span></li>";
+      }).join("");
+      var stack = lista(x.stack).map(function (t) {
+        return '<span class="chip">' + esc(t) + "</span>";
+      }).join("");
+
+      return '<article class="project-card" data-reveal>' +
+        '<div class="project-top">' +
+          (si(x.dominio)
+            ? '<span class="project-domain"><span class="material-symbols-outlined">' + esc(x.icono || "language") + "</span>" + esc(x.dominio) + "</span>"
+            : '<span class="project-domain"><span class="material-symbols-outlined">' + esc(x.icono || "language") + "</span>" + esc(x.nombre) + "</span>") +
+          (si(x.estado) ? '<span class="badge">' + esc(x.estado) + "</span>" : "") +
+        "</div>" +
+        '<div class="project-body">' +
+          "<h3>" + esc(x.nombre) + "</h3>" +
+          (si(x.descripcion) ? '<p class="project-desc">' + esc(x.descripcion) + "</p>" : "") +
+          (puntos ? '<ul class="bullets">' + puntos + "</ul>" : "") +
+          (stack ? '<div class="chips">' + stack + "</div>" : "") +
+          (links ? '<div class="project-links">' + links + "</div>" : "") +
+        "</div>" +
+      "</article>";
+    }).join("");
+
+    $("proyectos-cont").innerHTML = head + '<div class="projects-grid">' + cards + "</div>";
+  })();
+
+  /* ---------- Proyectos personales ---------- */
+  (function () {
+    var p = D.personales || {};
+    var items = lista(p.items).filter(function (x) { return x.activo !== false; });
+    var seccion = document.getElementById("personales");
+
+    /* Sin proyectos visibles: la sección entera no se muestra */
+    if (!items.length) {
+      if (seccion) seccion.style.display = "none";
+      return;
+    }
+
+    var head =
+      '<div class="section-head" data-reveal>' +
+        (si(p.kicker) ? '<div class="kicker-line">' + esc(p.kicker) + "</div>" : "") +
+        (si(p.titulo) ? "<h2>" + esc(p.titulo) + "</h2>" : "") +
+        (si(p.nota) ? '<p class="section-note">' + esc(p.nota) + "</p>" : "") +
+      "</div>";
+
+    var cards = items.map(function (x) {
+      var stack = lista(x.stack).map(function (t) {
+        return '<span class="chip">' + esc(t) + "</span>";
+      }).join("");
+      var boton = si(x.enlace)
+        ? '<a class="btn btn-primary btn-sm" href="' + esc(x.enlace) + '" target="_blank" rel="noreferrer">' +
+            esc(x.textoBoton || "Ver proyecto") +
+            '<span class="material-symbols-outlined">open_in_new</span></a>'
+        : "";
+
+      return '<article class="personal-card" data-reveal>' +
+        '<div class="personal-ico"><span class="material-symbols-outlined">' + esc(x.icono || "rocket_launch") + "</span></div>" +
+        '<div class="personal-body">' +
+          '<div class="personal-meta">' +
+            (si(x.tipo) ? '<span class="personal-tipo">' + esc(x.tipo) + "</span>" : "") +
+            (si(x.anio) ? '<span class="personal-anio">' + esc(x.anio) + "</span>" : "") +
+          "</div>" +
+          "<h3>" + esc(x.titulo) + "</h3>" +
+          (si(x.descripcion) ? "<p>" + esc(x.descripcion) + "</p>" : "") +
+          (stack ? '<div class="chips">' + stack + "</div>" : "") +
+        "</div>" +
+        (boton ? '<div class="personal-accion">' + boton + "</div>" : "") +
+      "</article>";
+    }).join("");
+
+    $("personales-cont").innerHTML = head + '<div class="personal-list">' + cards + "</div>";
+  })();
+
+  /* ---------- Habilidades ---------- */
+  (function () {
+    var s = D.skills || {};
+    var head =
+      '<div class="section-head" data-reveal>' +
+        (si(s.kicker) ? '<div class="kicker-line">' + esc(s.kicker) + "</div>" : "") +
+        (si(s.titulo) ? "<h2>" + esc(s.titulo) + "</h2>" : "") +
+        (si(s.nota) ? '<p class="section-note">' + esc(s.nota) + "</p>" : "") +
+      "</div>";
+
+    var cards = lista(s.grupos).filter(function (g) { return g.activo !== false; }).map(function (g) {
+      var tags = lista(g.tags).map(function (t) { return '<span class="chip">' + esc(t) + "</span>"; }).join("");
+      /* El nivel va en la fila de etiquetas (que salta de línea) para que nunca desborde la tarjeta */
+      var nivel = si(g.nivel) ? '<span class="skill-level">' + esc(g.nivel) + "</span>" : "";
+      return '<div class="skill-card" data-reveal>' +
+        '<div class="skill-head">' +
+          '<span class="skill-ico"><span class="material-symbols-outlined">' + esc(g.icono || "extension") + "</span></span>" +
+          "<h3>" + esc(g.titulo) + "</h3>" +
+        "</div>" +
+        (si(g.texto) ? "<p>" + esc(g.texto) + "</p>" : "") +
+        ((nivel || tags) ? '<div class="chips">' + nivel + tags + "</div>" : "") +
+      "</div>";
+    }).join("");
+
+    $("habilidades-cont").innerHTML = head + '<div class="skills-grid">' + cards + "</div>";
+  })();
+
+  /* ---------- Contacto ---------- */
+  (function () {
+    var c = D.contacto || {};
+    var head =
+      '<div class="section-head" data-reveal>' +
+        (si(c.kicker) ? '<div class="kicker-line">' + esc(c.kicker) + "</div>" : "") +
+        (si(c.titulo) ? "<h2>" + esc(c.titulo) + "</h2>" : "") +
+      "</div>";
+
+    var info = "";
+    if (si(c.email)) {
+      info += '<a class="info-item" href="mailto:' + esc(c.email) + '">' +
+        '<span class="info-ico"><span class="material-symbols-outlined">mail</span></span>' +
+        "<div><div class=\"info-label\">Email</div><div class=\"info-value\">" + esc(c.email) + "</div></div></a>";
+    }
+    if (si(c.telefono)) {
+      info += '<a class="info-item" href="tel:' + esc((c.telefonoEnlace || c.telefono).replace(/\s+/g, "")) + '">' +
+        '<span class="info-ico"><span class="material-symbols-outlined">call</span></span>' +
+        "<div><div class=\"info-label\">Teléfono / WhatsApp</div><div class=\"info-value\">" + esc(c.telefono) + "</div></div></a>";
+    }
+    if (si(c.ubicacion)) {
+      info += '<div class="info-item">' +
+        '<span class="info-ico"><span class="material-symbols-outlined">location_on</span></span>' +
+        "<div><div class=\"info-label\">Ubicación</div><div class=\"info-value\">" + esc(c.ubicacion) + "</div></div></div>";
+    }
+
+    var redes = lista(c.redes).filter(function (r) { return si(r.enlace); }).map(function (r) {
+      return '<a class="social" href="' + esc(r.enlace) + '" target="_blank" rel="noreferrer">' +
+        '<span class="material-symbols-outlined">' + esc(r.icono || "link") + "</span>" + esc(r.nombre) + "</a>";
+    }).join("");
+
+    $("contacto-cont").innerHTML = head +
+      '<div class="contact-grid">' +
+        '<div class="contact-info" data-reveal>' +
+          (si(c.parrafo) ? '<p class="contact-lead">' + esc(c.parrafo) + "</p>" : "") +
+          '<div class="info-list">' + info + "</div>" +
+          (redes ? '<div class="socials">' + redes + "</div>" : "") +
+        "</div>" +
+        '<div class="form-card" data-reveal>' +
+          '<h3><span class="material-symbols-outlined">send</span>Enviar mensaje</h3>' +
+          '<form id="form-contacto" novalidate>' +
+            '<div class="field"><label for="f-nombre">Nombre</label>' +
+              '<input type="text" id="f-nombre" name="nombre" placeholder="Tu nombre" required></div>' +
+            '<div class="field"><label for="f-email">Correo</label>' +
+              '<input type="email" id="f-email" name="email" placeholder="tu@correo.com" required></div>' +
+            '<div class="field"><label for="f-mensaje">Mensaje</label>' +
+              '<textarea id="f-mensaje" name="mensaje" placeholder="Cuéntame brevemente qué necesitas…" required></textarea></div>' +
+            '<div class="form-foot">' +
+              '<span class="form-hint">Respuesta en menos de 24 h</span>' +
+              '<button class="btn btn-primary" type="submit">' +
+                '<span class="material-symbols-outlined">send</span>Enviar mensaje</button>' +
+            "</div>" +
+            '<div class="form-status" id="form-status" role="status"></div>' +
+          "</form>" +
+        "</div>" +
+      "</div>";
+
+    var form = $("form-contacto"), estado = $("form-status");
+    form.addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var nombre = $("f-nombre").value.trim();
+      var email = $("f-email").value.trim();
+      var mensaje = $("f-mensaje").value.trim();
+      estado.classList.remove("is-error");
+
+      if (!nombre || !email || !mensaje) {
+        estado.textContent = "Completa todos los campos.";
+        estado.classList.add("is-error");
+        return;
+      }
+
+      /* Sin endpoint configurado: abre el cliente de correo (nunca finge un envío) */
+      if (!si(c.formspree)) {
+        var asunto = "Mensaje desde tu portafolio — " + nombre;
+        var cuerpo = mensaje + "\n\n— " + nombre + " (" + email + ")";
+        window.location.href = "mailto:" + c.email +
+          "?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(cuerpo);
+        estado.textContent = "Se abrió tu aplicación de correo con el mensaje listo para enviar.";
+        return;
+      }
+
+      estado.textContent = "Enviando…";
+      fetch(c.formspree, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({ nombre: nombre, email: email, mensaje: mensaje })
+      })
+        .then(function (r) {
+          if (!r.ok) throw new Error("No se pudo enviar");
+          estado.textContent = "✓ Mensaje enviado. Te responderé pronto.";
+          form.reset();
+        })
+        .catch(function () {
+          estado.textContent = "No se pudo enviar. Escríbeme a " + c.email + ".";
+          estado.classList.add("is-error");
+        });
+    });
+  })();
+
+  /* ---------- Pie ---------- */
+  (function () {
+    var estado = D.general.disponible
+      ? '<span class="footer-status"><span class="status-dot"></span>' + esc(D.general.disponibleTexto || "Disponible") + "</span>"
+      : "";
+    var enlaces = lista(D.navegacion).map(function (n) {
+      return '<a href="' + esc(n.enlace) + '">' + esc(n.texto) + "</a>";
+    }).join("");
+    $("footer-cont").innerHTML =
+      '<div class="footer-left">' + estado +
+        '<span class="footer-copy">' + esc((D.contacto && D.contacto.copyright) || "") + "</span>" +
+      "</div>" +
+      '<div class="footer-links">' + enlaces + "</div>";
+  })();
+
+  /* ---------- Animación de aparición ---------- */
+  (function () {
+    var items = Array.prototype.slice.call(document.querySelectorAll("[data-reveal]"));
+    if (!items.length) return;
+
+    /* Respaldo: revela lo que ya está en pantalla sin depender del observador */
+    function revelarVisibles() {
+      items.forEach(function (el) {
+        if (el.classList.contains("is-visible")) return;
+        var r = el.getBoundingClientRect();
+        if (r.top < (window.innerHeight || 0) && r.bottom > 0) el.classList.add("is-visible");
+      });
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      items.forEach(function (el) { el.classList.add("is-visible"); });
+      return;
+    }
+
+    var obs = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("is-visible"); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    items.forEach(function (el) { obs.observe(el); });
+
+    revelarVisibles();
+    document.addEventListener("visibilitychange", function () {
+      if (!document.hidden) revelarVisibles();
+    });
+    window.addEventListener("pageshow", revelarVisibles);
+  })();
+})();
+</script>
+
+</body>
+</html>
